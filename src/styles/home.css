@@ -1,0 +1,129 @@
+.container{
+    /* background-color: antiquewhite; */
+    display: flex;
+}
+
+.left{
+    width: 55%;
+    height: 85vh;
+    /* background-color: aquamarine; */
+}
+
+.title{
+    font-size: 3rem;
+    font-family: 'Poppins';
+    color: white;
+    line-height: 5rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.desc p{
+    font-family: 'Poppins';
+    color: #ffe8e85e;
+    /* line-height: 5rem; */
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+
+.start-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    /* background-color: aqua; */
+    background: linear-gradient(#FF9E28, #FFE134);
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 600;
+    color: #3b3636;
+    transition: .5s;
+}
+
+.start-btn a{
+    color: black;
+    text-decoration: none;
+}
+
+/* .transactions{
+    color: white;
+    width: 500px;
+    height: 50px;
+    border: 2px solid white;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 5px;
+} */
+
+.gradient-border p{
+    color: white;
+    font-family: 'Helvetica';
+    font-size: larger;
+    /* padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px; */
+    padding: 10px;
+}
+
+.right{
+    width: 45%;
+    height: 85vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img{
+    /* background-color: black; */
+    width: 75%;
+}
+
+.start-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px 30px #fff3aead;
+    transition: .3s;
+    transform: scale(1.03);
+}
+
+/* ANIMATION */
+
+.gradient-border {
+    --borderWidth: 2px;
+    background: black;
+    position: relative;
+    width:fit-content;
+    height: 50px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 5px;
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }

@@ -1,0 +1,27 @@
+.customers_table {
+    /* background-color: red; */
+    width: 90vw;
+    height: 100vh;
+    font-family: 'Poppins';
+    /* margin-left: 3rem; */
+}
+
+.customers_table tr{
+    /* background-color: aqua; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    text-align: center;
+}
+
+.customers_table td{
+    text-align: center;
+    /* padding-top: 5rem; */
+}
+
+.customers_table .values{
+    /* background-color: aquamarine; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center;
+    padding-top: 1rem; */
+}

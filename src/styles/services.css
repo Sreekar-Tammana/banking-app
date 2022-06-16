@@ -1,0 +1,25 @@
+*{
+    color: white;
+}
+
+.services-boxes{
+    /* background-color: coral; */
+}
+
+.main-title{
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.container-1{
+    /* background-color: blue; */
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: 3rem;
+}
